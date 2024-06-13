@@ -1,0 +1,90 @@
+/* Base styles */
+*{
+    font-family: Montserrat;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(9,121,43,1) 38%, rgba(0,112,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    color: #fff;
+}
+
+#welcome {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo_title img {
+    max-width: 80px;
+    margin: 10px 0; 
+}
+
+.logo_title h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Movie titles in a row for mobile */
+.movies {
+    display: grid;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.movies .movie {
+    flex: 0 0 auto;
+    margin: 5px 10px;
+    text-align: center;
+    padding: 10px 0;
+    border: #fff 3px solid;
+    border-radius: 4px;
+}
+
+.movies .movie img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.movies .movie p {
+    font-size: 16px;
+    margin: 5px;
+    font-weight: 700;
+}
+#questionMode{
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.playingMode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.timeBased ,.questionNumber{
+    flex: 0 0 auto;
+    margin: 10px 10px;
+    text-align: center;
+    padding: 5px 0;
+    border: #fff 3px solid;
+    border-radius: 4px;
+}
+#questionMode p{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px;
+}
