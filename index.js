@@ -22,8 +22,13 @@ mongoose.connect(process.env.MONGO_URI, {
 
 
 const homeRoute = require('./routes/homeRoute');
-const { log } = require('console');
 app.use(homeRoute);
+
+const gameRoute = require('./routes/gameRoute');
+app.use(gameRoute);
+
+const userScore = require('./routes/UserScore');
+app.use(userScore);
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

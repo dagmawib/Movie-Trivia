@@ -9,8 +9,8 @@ body {
     background: rgb(2,0,36);
     background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(9,121,43,1) 38%, rgba(0,112,255,1) 100%);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
+    background-size: cover;
+    /* height: 100vh; */
     color: #fff;
 }
 
@@ -18,6 +18,10 @@ body {
     padding: 20px;
     text-align: center;
     justify-content: center;
+    background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(9,121,43,1) 38%, rgba(0,112,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .logo_title {
@@ -49,6 +53,7 @@ body {
     margin: 5px 10px;
     text-align: center;
     padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.5); 
     border: #fff 3px solid;
     border-radius: 4px;
 }
@@ -82,9 +87,77 @@ body {
     padding: 5px 0;
     border: #fff 3px solid;
     border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5); 
 }
 #questionMode p{
     font-size: 20px;
     font-weight: 700;
     margin: 5px;
+}
+/* ////////////////////Game Section /////////////////// */
+#game h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+.question-paragraph {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+    font-weight: 300; 
+}
+
+.choices-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+/* Style for each choice item */
+.choice-item {
+    padding: 10px; 
+    background-color: #95D2B3; 
+    border: 1px solid #ddd; 
+    margin-bottom: 5px; 
+    margin-right: 15px;
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+/* Style for no choices available message */
+.no-choices {
+    color: red; 
+    font-style: italic; 
+    padding: 10px; 
+}
+/* Correct answer style */
+.choice-item.correct {
+    background-color: green;
+    color: white;
+}
+
+/* Incorrect answer style */
+.choice-item.incorrect {
+    background-color: red;
+    color: white;
+}
+/* Style for the answer paragraph */
+.answer-paragraph {
+    display: none; /* Initially hide the answer */
+}
+.submit-button {
+    background-color: #4CAF50; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 10px 2px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+}
+
+.submit-button:hover {
+    background-color: #45a049; 
 }

@@ -1,24 +1,53 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const MovieSchema = new Schema({
-    title: {
+const FriendsSchema = new Schema({
+    question: {
         type: String,
         required: true,
-        unique: true
     },
-    choice: {
+    choice: [{
         type: String,
         required: true,
-        unique: true
-    },
+    }],
     correct_answer: {
         type: String,
         required: true,
-        unique: true
     }
 });
 
-const Movie = mongoose.model("Movie", MovieSchema);
+const HIMYMSchema = new Schema({
+    question: {
+        type: String,
+        required: true,
+    },
+    choice: [{
+        type: String,
+        required: true,
+    }],
+    correct_answer: {
+        type: String,
+        required: true,
+    }
+});
 
-module.exports = Movie;
+const OfficeSchema = new Schema({
+    question: {
+        type: String,
+        required: true,
+    },
+    choice: [{
+        type: String,
+        required: true,
+    }],
+    correct_answer: {
+        type: String,
+        required: true,
+    }
+});
+
+const HIMYM = mongoose.model("HIMYM", HIMYMSchema);
+const Office = mongoose.model("Office", OfficeSchema);
+const Friends = mongoose.model("Friends", FriendsSchema);
+
+module.exports = {Friends, HIMYM, Office};

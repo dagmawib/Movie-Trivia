@@ -21,21 +21,21 @@
             <img src="images/letter-m.png" alt="">
         </div>
         <div class="movies">
-            <div class="movie" href="#questionMode">
+            <div class="movie" data-movie="friends" href="#game">
                 <img src="" alt="">
                 <p>Friends</p>
             </div>
-            <div class="movie" href="#questionMode">
+            <div class="movie" data-movie="how-i-met-your-mother" href="#game">
                 <img src="" alt="">
                 <p>How I Met Your Mother</p>
             </div>
-            <div class="movie" href="#questionMode">
+            <div class="movie" data-movie="the-office" href="#game">
                 <img src="" alt="">
                 <p>The Office</p>
             </div>
         </div>
     </section>
-    <section id="questionMode">
+    <!-- <section id="questionMode">
         <div class="playingMode">
             <h2>Playing Mode</h2>
         </div>
@@ -47,14 +47,13 @@
             <img src="" alt="">
             <p>10 Questions</p>
         </div>
-    </section>
-    <section id="Game">
+    </section> -->
+    <section id="game" style="display:none;">
         <div>
-            <h1>Here is the games will be</h1>
+            <h1 id="game-title"></h1>
+            <ul id="questions-list"></ul>
         </div>
     </section>
-
-
 
     <script src="script.js" defer></script>
 </body>
